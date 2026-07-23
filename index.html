@@ -18,7 +18,7 @@
 <!-- ============ NAV ============ -->
 <header class="nav" id="nav">
   <div class="nav-inner">
-    <a href="#accueil" class="logo">bernice<span class="logo-at">@</span>web<span class="cursor-blink">_</span></a>
+    <a href="#accueil" class="logo">Bernice<span class="logo-at">@</span>web<span class="cursor-blink">_</span></a>
 
     <nav class="nav-links" id="navLinks">
       <a href="#accueil" class="nav-link active">~/accueil</a>
@@ -86,7 +86,7 @@
           <img src="images/bernice.jpg" alt="Photo de Bernice Malomon" id="profilePhoto" onerror="this.style.display='none'; this.parentElement.classList.add('no-photo')">
           <div class="photo-fallback mono">BM</div>
         </div>
-        <div class="photo-badge mono">🎓 En formation Fullstack — EIG Bénin</div>
+        <div class="photo-badge mono">🎓 En formation Dev Fullstack — EIG Bénin</div>
       </div>
 
       <div class="profil-text reveal">
@@ -99,18 +99,11 @@
         </p>
         <p>
           Motivée à mettre mes compétences techniques au service de projets
-          concrets, je recherche une opportunité pour continuer à progresser
-          et contribuer activement au sein d'une équipe dynamique.
+          concrets, je recherche une opportunité — stage ou premier poste —
+          pour continuer à progresser aux côtés d'une équipe qui aime bien
+          faire les choses, et pour transformer ce que j'apprends en produits
+          que de vraies personnes utilisent.
         </p>
-
-        <div class="langues">
-          <span class="langues-label mono">langues</span>
-          <div class="langues-tags">
-            <span class="tag">Français</span>
-            <span class="tag">Anglais — Intermédiaire</span>
-            <span class="tag">Yoruba</span>
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -158,7 +151,7 @@
         <p class="skill-cmd mono">$ veille</p>
         <h3>Innovation</h3>
         <div class="skill-tags">
-          <span class="tag tag-orange">IA générative</span>
+          <span class="tag tag-orange">IA </span>
         </div>
       </div>
     </div>
@@ -169,28 +162,32 @@
 <section class="section" id="formation">
   <div class="section-inner">
     <p class="section-tag mono reveal">$ cat formation.log</p>
-    <h2 class="section-title reveal">Diplôme &amp; formation</h2>
+    <h2 class="section-title reveal">Formation</h2>
+    <p class="formation-intro reveal">
+      Une formation pensée autour de la pratique&nbsp;: chaque notion apprise
+      se retrouve, quelques jours plus tard, dans un vrai projet à livrer.
+      C'est ce rythme qui m'a fait passer du premier "Hello World" à des
+      applications complètes, du front au back.
+    </p>
 
     <div class="timeline">
       <div class="timeline-item reveal">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
-          <span class="timeline-date mono">SEP 2025 — PRÉSENT</span>
+          <span class="timeline-date mono">Oct 2025 — Présent</span>
           <h3>Formation en développement Fullstack</h3>
           <p class="timeline-place">EIG Bénin</p>
+          <p class="timeline-desc">
+            Un parcours intensif qui couvre l'ensemble de la chaîne de
+            développement web, du premier croquis d'interface jusqu'à la
+            mise en ligne d'une application fonctionnelle.
+          </p>
           <ul>
-            <li>Apprentissage des langages et frameworks front-end (HTML, CSS3, JavaScript, React) et back-end (PHP, Laravel)</li>
-            <li>Réalisation de projets pratiques individuels et en groupe, de la conception à la mise en ligne</li>
-            <li>Initiation aux bonnes pratiques de versioning (Git/GitHub) et au travail en équipe agile</li>
+            <li><strong>Front-end&nbsp;:</strong> construction d'interfaces avec HTML, CSS3 et JavaScript, puis montée en compétence sur React pour des composants dynamiques et réutilisables</li>
+            <li><strong>Back-end&nbsp;:</strong> logique serveur, gestion de bases de données et création d'API avec PHP et le framework Laravel</li>
+            <li><strong>Projets encadrés&nbsp;:</strong> plusieurs projets menés en solo et en équipe, de la prise de besoin jusqu'à la mise en production, avec revues de code entre pairs</li>
+            <li><strong>Méthode &amp; outils&nbsp;:</strong> travail en méthode agile, versioning avec Git/GitHub, et habitude du travail collaboratif sur un dépôt partagé</li>
           </ul>
-        </div>
-      </div>
-
-      <div class="timeline-item reveal">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <span class="timeline-date mono">2025</span>
-          <h3>Baccalauréat série A</h3>
         </div>
       </div>
     </div>
@@ -201,11 +198,11 @@
 <section class="section section-alt" id="projets">
   <div class="section-inner">
     <p class="section-tag mono reveal">$ ls projets/</p>
-    <h2 class="section-title reveal">Projets</h2>
+    <h2 class="section-title reveal">Mes Projets</h2>
 
     <div class="project-card reveal">
       <div class="project-media">
-        <img src="images/projects/cvpro.png" alt="Aperçu du projet CV Pro" onerror="this.style.display='none'; this.parentElement.classList.add('no-media')">
+        <img src="images/projets/cvpro.png" alt="Aperçu du projet CV Pro" onerror="this.style.display='none'; this.parentElement.classList.add('no-media')">
         <div class="project-media-fallback mono">CV Pro — aperçu à venir</div>
       </div>
       <div class="project-info">
@@ -215,8 +212,97 @@
           Conception et intégration de l'interface utilisateur pour un outil de
           génération de CV professionnels, au sein d'une équipe de développement.
         </p>
+        <div class="project-tags">
+          <span class="tag tag-blue">HTML</span>
+          <span class="tag tag-blue">CSS3</span>
+          <span class="tag tag-blue">React</span>
+        </div>
         <a href="https://cvpro-pink.vercel.app/" target="_blank" rel="noopener" class="btn btn-small">
           Voir le site <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-media">
+        <img src="images/projets/modallas.png" alt="Aperçu du site Modella's Event" onerror="this.style.display='none'; this.parentElement.classList.add('no-media')">
+        <div class="project-media-fallback mono">Modella's Event — aperçu à venir</div>
+      </div>
+      <div class="project-info">
+        <span class="project-role mono">Développeuse Web</span>
+        <h3>Modella's Event — Décoration événementielle</h3>
+        <p>
+          Site vitrine conçu pour Modella's Event, une entreprise de décoration
+          qui habille mariages, anniversaires, baptêmes et événements
+          professionnels d'ambiances élégantes et sur mesure. L'enjeu&nbsp;:
+          traduire en ligne le même soin du détail que sur le terrain, avec une
+          mise en page qui donne envie de faire défiler les réalisations.
+        </p>
+        <div class="project-tags">
+          <span class="tag tag-blue">HTML</span>
+          <span class="tag tag-blue">CSS3</span>
+          <span class="tag tag-blue">JavaScript</span>
+          <span class="tag">Git</span>
+          <span class="tag">GitHub</span>
+        </div>
+        <a href="https://github.com/Adjokeade/Modalla-s" target="_blank" rel="noopener" class="btn btn-small">
+          Voir le code <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-media">
+        <img src="images/projets/ypcommunication.png" alt="Aperçu du site YP Communication" onerror="this.style.display='none'; this.parentElement.classList.add('no-media')">
+        <div class="project-media-fallback mono">YP Communication — aperçu à venir</div>
+      </div>
+      <div class="project-info">
+        <span class="project-role mono">Développeuse Web — projet client réel</span>
+        <h3>YP Communication — Portfolio d'un graphiste</h3>
+        <p>
+          Site de communication digitale réalisé pour un graphiste, dans le
+          cadre d'un projet client réel. L'objectif était de mettre en valeur
+          ses réalisations et son identité visuelle à travers une interface
+          claire, qui laisse toute la place aux visuels sans jamais leur faire
+          de l'ombre.
+        </p>
+        <div class="project-tags">
+          <span class="tag tag-blue">HTML</span>
+          <span class="tag tag-blue">CSS3</span>
+          <span class="tag tag-blue">JavaScript</span>
+          <span class="tag">Git</span>
+          <span class="tag">GitHub</span>
+        </div>
+        <a href="https://github.com/Adjokeade/YP-Communication" target="_blank" rel="noopener" class="btn btn-small">
+          Voir le code <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-media">
+        <img src="images/projets/agencevoyage.png" alt="Aperçu du site Agence de voyage" onerror="this.style.display='none'; this.parentElement.classList.add('no-media')">
+        <div class="project-media-fallback mono">Agence de voyage — aperçu à venir</div>
+      </div>
+      <div class="project-info">
+        <span class="project-role mono">Développeuse Fullstack</span>
+        <h3>Agence de voyage — Plateforme de réservation</h3>
+        <p>
+          Application de réservation de voyages permettant de consulter des
+          offres et d'effectuer une demande de réservation de bout en bout.
+          Premier projet fullstack complet&nbsp;: interface soignée côté
+          client, logique de réservation et stockage des données côté serveur.
+        </p>
+        <div class="project-tags">
+          <span class="tag tag-orange">PHP</span>
+          <span class="tag tag-orange">MySQL</span>
+          <span class="tag tag-blue">HTML</span>
+          <span class="tag tag-blue">CSS3</span>
+          <span class="tag">Git</span>
+          <span class="tag">GitHub</span>
+        </div>
+        <a href="https://github.com/Adjokeade/agence_voyage" target="_blank" rel="noopener" class="btn btn-small">
+          Voir le code <span class="arrow">→</span>
         </a>
       </div>
     </div>
@@ -283,7 +369,7 @@
 </section>
 
 <footer class="footer">
-  <p class="mono">© <span id="year"></span> Bernice Malomon — construit avec HTML, CSS &amp; JS</p>
+  <p class="mono">© <span id="year"></span> Bernice Malomon</p>
 </footer>
 
 <script src="js/script.js"></script>

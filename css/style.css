@@ -333,10 +333,6 @@ img{ max-width: 100%; display:block; }
 .profil-text{ padding-top: 4px; }
 .profil-text .section-title{ margin-bottom: 20px; }
 
-.langues{ margin-top: 30px; display:flex; align-items:baseline; gap: 18px; flex-wrap:wrap; }
-.langues-label{ color: var(--text-dim); font-size: .8rem; }
-.langues-tags{ display:flex; gap:10px; flex-wrap:wrap; }
-
 .tag{
   display:inline-block; padding: 7px 14px; border-radius: 100px;
   font-family: var(--f-mono); font-size: .78rem;
@@ -364,7 +360,12 @@ img{ max-width: 100%; display:block; }
 .skill-card h3{ font-size: 1.1rem; margin-bottom: 16px; }
 .skill-tags{ display:flex; gap:10px; flex-wrap:wrap; }
 
-/* ---- formation timeline ---- */
+/* ---- formation ---- */
+.formation-intro{
+  max-width: 62ch;
+  margin-bottom: 44px;
+  font-size: 1.02rem;
+}
 .timeline{ position:relative; padding-left: 34px; }
 .timeline::before{
   content:''; position:absolute; left: 5px; top: 6px; bottom: 6px; width: 1px;
@@ -380,6 +381,7 @@ img{ max-width: 100%; display:block; }
 .timeline-date{ color: var(--blue); font-size: .78rem; }
 .timeline-content h3{ font-size: 1.25rem; margin: 8px 0 4px; }
 .timeline-place{ color: var(--orange); font-size: .9rem; margin-bottom: 10px; }
+.timeline-desc{ max-width: 60ch; }
 
 /* ---- projets ---- */
 .project-card{
@@ -389,6 +391,13 @@ img{ max-width: 100%; display:block; }
   transition: transform .4s var(--ease), border-color .4s ease;
 }
 .project-card:hover{ transform: translateY(-6px); border-color: rgba(224,144,77,0.4); }
+.project-card + .project-card{ margin-top: 22px; }
+
+/* alternance image/texte pour aérer une liste de plusieurs projets */
+.project-card:nth-child(even){ grid-template-columns: 1fr 1.1fr; }
+.project-card:nth-child(even) .project-media{ order: 2; }
+.project-card:nth-child(even) .project-info{ order: 1; }
+
 .project-media{
   position: relative; min-height: 260px; background: linear-gradient(135deg, var(--blue-soft), var(--orange-soft));
 }
@@ -401,7 +410,8 @@ img{ max-width: 100%; display:block; }
 .project-info{ padding: 38px; display:flex; flex-direction:column; justify-content:center; }
 .project-role{ color: var(--text-dim); font-size: .78rem; margin-bottom: 10px; }
 .project-info h3{ font-size: 1.3rem; margin-bottom: 12px; }
-.project-info .btn-small{ align-self: flex-start; margin-top: 10px; }
+.project-tags{ display:flex; gap:8px; flex-wrap:wrap; margin-bottom: 6px; }
+.project-info .btn-small{ align-self: flex-start; margin-top: 16px; }
 
 /* ---- contact ---- */
 .contact-intro{ max-width: 50ch; margin-bottom: 44px; }
@@ -437,6 +447,9 @@ img{ max-width: 100%; display:block; }
   .terminal-window{ transform: rotate(0.5deg); }
   .skills-grid{ grid-template-columns: 1fr; }
   .project-card{ grid-template-columns: 1fr; }
+  .project-card:nth-child(even){ grid-template-columns: 1fr; }
+  .project-card:nth-child(even) .project-media{ order: 0; }
+  .project-card:nth-child(even) .project-info{ order: 0; }
   .project-media{ min-height: 200px; }
   .contact-grid{ grid-template-columns: 1fr; }
 }

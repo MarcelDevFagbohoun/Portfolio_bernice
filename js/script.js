@@ -1,6 +1,4 @@
-// ============================================================
-// BERNICE MALOMON — PORTFOLIO — script.js
-// ============================================================
+
 
 document.addEventListener('DOMContentLoaded', () => {
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -84,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
       { raw: '  role: "Développeuse Web",', html: '&nbsp;&nbsp;role: <span class="tk-str">"Développeuse Web"</span>,' },
       { raw: '  stack: ["HTML","CSS3","JS","React","PHP","Laravel"],', html: '&nbsp;&nbsp;stack: [<span class="tk-str">"HTML"</span>, <span class="tk-str">"CSS3"</span>, <span class="tk-str">"JS"</span>, <span class="tk-str">"React"</span>, <span class="tk-str">"PHP"</span>, <span class="tk-str">"Laravel"</span>],' },
       { raw: '  formation: "EIG Bénin",', html: '&nbsp;&nbsp;formation: <span class="tk-str">"EIG Bénin"</span>,' },
-      { raw: '  passion: "IA générative",', html: '&nbsp;&nbsp;passion: <span class="tk-str">"IA générative"</span>,' },
+      { raw: '  passion: "IA générative",', html: '&nbsp;&nbsp;passion: <span class="tk-str">"IA "</span>,' },
       { raw: '  disponible: true', html: '&nbsp;&nbsp;disponible: <span class="tk-bool">true</span>' },
       { raw: '};', html: '};' },
     ];
